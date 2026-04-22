@@ -99,16 +99,18 @@ const ClientsSection = () => {
 
           {/* Right Side - Stats */}
           <div className="flex items-center justify-center lg:pl-12">
-            <div className="space-y-12">
+            <div className="grid grid-cols-2 gap-8 lg:flex lg:flex-col lg:space-y-12 w-full lg:w-auto">
               {stats.map((stat, index) => (
                 <div
                   key={index}
-                  className="group hover:scale-105 transition-transform duration-300"
+                  className={`group hover:scale-105 transition-transform duration-300 ${
+                    index === 2 ? 'col-span-2 flex flex-col items-center' : ''
+                  }`}
                 >
-                  <div className="text-5xl lg:text-6xl font-bold text-white mb-2 group-hover:text-[#4DC035] transition-colors duration-300">
+                  <div className="text-3xl lg:text-6xl font-bold text-white mb-2 group-hover:text-[#4DC035] transition-colors duration-300">
                     {stat.number}
                   </div>
-                  <div className="text-xl text-white/70 font-medium">
+                  <div className="text-sm lg:text-xl text-white/70 font-medium">
                     {stat.label}
                   </div>
                 </div>
