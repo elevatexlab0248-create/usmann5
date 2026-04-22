@@ -98,13 +98,13 @@ const ClientsSection = () => {
           <div className="hidden lg:block absolute left-1/2 top-1/4 bottom-1/4 w-px bg-gradient-to-b from-transparent via-white/20 to-transparent" />
 
           {/* Right Side - Stats */}
-          <div className="flex items-center justify-center lg:pl-12">
-            <div className="grid grid-cols-2 gap-8 lg:flex lg:flex-col lg:space-y-12 w-full lg:w-auto">
+          <div className="flex items-center justify-center lg:pl-12 w-full">
+            <div className="grid grid-cols-2 gap-8 lg:flex lg:flex-col lg:space-y-12 w-full lg:w-auto px-4 max-w-sm mx-auto lg:mx-0 lg:max-w-none">
               {stats.map((stat, index) => (
                 <div
                   key={index}
-                  className={`group hover:scale-105 transition-transform duration-300 ${
-                    index === 2 ? 'col-span-2 flex flex-col items-center' : ''
+                  className={`flex flex-col items-center justify-center group hover:scale-105 transition-transform duration-300 ${
+                    index === 2 ? 'col-span-2' : ''
                   }`}
                 >
                   <div className="text-3xl lg:text-6xl font-bold text-white mb-2 group-hover:text-[#4DC035] transition-colors duration-300">
