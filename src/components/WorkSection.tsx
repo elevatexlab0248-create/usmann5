@@ -80,7 +80,7 @@ const WorkSection = () => {
             </div>
 
             {/* Video Container */}
-            <div className="video-container relative w-full h-full">
+            <div className="video-container relative w-full h-full bg-black">
               {videos.map((video, index) => (
                 <div
                   key={video.id}
@@ -88,13 +88,12 @@ const WorkSection = () => {
                     index === currentVideo ? 'opacity-100 z-10' : 'opacity-0 z-0'
                   } ${isTransitioning ? 'transition-opacity duration-500' : ''}`}
                 >
-                  <iframe
+                  <video
                     className="w-full h-full object-cover"
                     src={video.url}
                     title={video.title}
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    style={{ border: 'none' }}
+                    controls
+                    preload="metadata"
                   />
                 </div>
               ))}

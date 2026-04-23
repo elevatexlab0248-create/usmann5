@@ -17,13 +17,13 @@ const VideoShowcase: React.FC<VideoShowcaseProps> = ({ videos }) => {
         <div key={video.id} className="relative max-w-[200px]">
           <div className="relative aspect-[9/16] rounded-lg overflow-hidden border border-[#4DC035]/10
             transform transition-all duration-300 hover:scale-105 hover:border-[#4DC035]/30
-            hover:shadow-[0_0_25px_rgba(77,192,53,0.2)]">
-            <iframe
+            hover:shadow-[0_0_25px_rgba(77,192,53,0.2)] bg-black">
+            <video
               src={video.videoUrl}
               title={video.title}
-              className="absolute inset-0 w-full h-full"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
+              className="absolute inset-0 w-full h-full object-cover"
+              controls
+              preload="metadata"
             />
           </div>
         </div>
