@@ -1,8 +1,9 @@
 import React from 'react';
-import { Instagram } from 'lucide-react';
+import { Instagram, MessageCircle } from 'lucide-react';
 
 const socialLinks = [
   { icon: Instagram, href: 'https://www.instagram.com/usmanlegacy_?igsh=MWdsaTR0aGgyZHVpag==', label: 'Instagram' },
+  { icon: MessageCircle, href: 'https://web.whatsapp.com/send?phone=923417282032', label: 'WhatsApp' },
 ];
 
 const SocialLinks = () => {
