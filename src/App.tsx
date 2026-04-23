@@ -79,9 +79,9 @@ function App() {
                 Portfolio
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-[#4DC035] to-[#4DC035] group-hover:w-full transition-all duration-300"></span>
               </Link>
-              <button className="px-6 py-2 bg-[#4DC035]/10 border border-[#4DC035]/30 rounded-full text-[#4DC035] text-sm font-medium transition-all duration-300 hover:bg-[#4DC035] hover:text-black hover:border-transparent">
+              <a href="https://calendly.com/usman-prestigemediapk/30min" target="_blank" rel="noopener noreferrer" className="px-6 py-2 bg-[#4DC035]/10 border border-[#4DC035]/30 rounded-full text-[#4DC035] text-sm font-medium transition-all duration-300 hover:bg-[#4DC035] hover:text-black hover:border-transparent">
                 Contact
-              </button>
+              </a>
             </div>
           </div>
 
@@ -106,9 +106,9 @@ function App() {
                 >
                   Portfolio
                 </Link>
-                <button className="px-6 py-2 bg-[#4DC035]/10 border border-[#4DC035]/30 rounded-full text-[#4DC035] text-sm font-medium transition-all duration-300 hover:bg-[#4DC035] hover:text-black hover:border-transparent">
+                <a href="https://calendly.com/usman-prestigemediapk/30min" target="_blank" rel="noopener noreferrer" className="px-6 py-2 bg-[#4DC035]/10 border border-[#4DC035]/30 rounded-full text-[#4DC035] text-sm font-medium transition-all duration-300 hover:bg-[#4DC035] hover:text-black hover:border-transparent">
                   Contact
-                </button>
+                </a>
               </div>
             </div>
           )}
@@ -149,10 +149,10 @@ function App() {
 
           {/* CTA Button */}
           <div className="animate-fade-in-delayed-2">
-            <button className="group px-10 py-4 bg-gradient-to-r from-[#4DC035] to-[#4DC035] rounded-full text-black font-bold text-lg transition-all duration-300 hover:shadow-lg hover:shadow-[#FFD700]/30 hover:scale-105 flex items-center gap-3 animate-jiggle">
+            <a href="https://calendly.com/usman-prestigemediapk/30min" target="_blank" rel="noopener noreferrer" className="group inline-flex px-10 py-4 bg-gradient-to-r from-[#4DC035] to-[#4DC035] rounded-full text-black font-bold text-lg transition-all duration-300 hover:shadow-lg hover:shadow-[#FFD700]/30 hover:scale-105 items-center gap-3 animate-jiggle">
               Book free strategic call
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </button>
+            </a>
           </div>
         </div>
       </section>
@@ -191,9 +191,9 @@ function App() {
               <p className="text-white/60 text-lg mb-8 max-w-xl mx-auto">
                 Let's bring your vision to life. Book a free strategy call and see how we can grow your brand.
               </p>
-              <button className="px-10 py-4 bg-gradient-to-r from-[#4DC035] to-[#4DC035] rounded-full text-black font-bold text-base transition-all duration-300 hover:shadow-lg hover:shadow-[#4DC035]/30 hover:scale-105">
+              <a href="https://calendly.com/usman-prestigemediapk/30min" target="_blank" rel="noopener noreferrer" className="inline-block px-10 py-4 bg-gradient-to-r from-[#4DC035] to-[#4DC035] rounded-full text-black font-bold text-base transition-all duration-300 hover:shadow-lg hover:shadow-[#4DC035]/30 hover:scale-105">
                 Book free strategic call
-              </button>
+              </a>
             </div>
           </div>
         </div>

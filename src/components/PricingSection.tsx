@@ -56,12 +56,12 @@ const PricingSection = () => {
                 ))}
               </ul>
 
-              <button className="w-full py-3 px-6 rounded-xl bg-white/5 text-white border border-white/10
+              <a href="https://calendly.com/usman-prestigemediapk/30min" target="_blank" rel="noopener noreferrer" className="block w-full py-3 px-6 rounded-xl bg-white/5 text-white border border-white/10
                 transition-all duration-300 hover:bg-white/10 hover:border-white/20
                 hover:shadow-[0_0_20px_rgba(255,255,255,0.1)] hover:scale-[1.02]
-                active:scale-[0.98]">
+                active:scale-[0.98] text-center">
                 Book free strategic call
-              </button>
+              </a>
             </div>
           </div>
 
@@ -95,11 +95,11 @@ const PricingSection = () => {
                 ))}
               </ul>
 
-              <button className="w-full py-3 px-6 rounded-xl bg-gradient-to-r from-[#4DC035] to-[#4DC035]
+              <a href="https://calendly.com/usman-prestigemediapk/30min" target="_blank" rel="noopener noreferrer" className="block w-full py-3 px-6 rounded-xl bg-gradient-to-r from-[#4DC035] to-[#4DC035]
                 text-black font-bold transition-all duration-300 hover:shadow-[0_0_20px_rgba(77,192,53,0.3)]
-                hover:scale-[1.02] active:scale-[0.98]">
+                hover:scale-[1.02] active:scale-[0.98] text-center">
                 Book free strategic call
-              </button>
+              </a>
             </div>
           </div>
 
@@ -125,12 +125,12 @@ const PricingSection = () => {
                 ))}
               </ul>
 
-              <button className="w-full py-3 px-6 rounded-xl bg-white/5 text-white border border-white/10
+              <a href="https://calendly.com/usman-prestigemediapk/30min" target="_blank" rel="noopener noreferrer" className="block w-full py-3 px-6 rounded-xl bg-white/5 text-white border border-white/10
                 transition-all duration-300 hover:bg-white/10 hover:border-white/20
                 hover:shadow-[0_0_20px_rgba(255,255,255,0.1)] hover:scale-[1.02]
-                active:scale-[0.98]">
+                active:scale-[0.98] text-center">
                 Book free strategic call
-              </button>
+              </a>
             </div>
           </div>
         </div>
