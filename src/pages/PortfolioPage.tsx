@@ -62,9 +62,9 @@ const PortfolioPage: React.FC = () => {
                 Portfolio
                 <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-[#4DC035] to-[#4DC035]" />
               </Link>
-              <button className="px-6 py-2 bg-[#4DC035]/10 border border-[#4DC035]/30 rounded-full text-[#4DC035] text-sm font-medium transition-all duration-300 hover:bg-[#4DC035] hover:text-black hover:border-transparent">
+              <a href="https://calendly.com/usman-prestigemediapk/30min" target="_blank" rel="noopener noreferrer" className="px-6 py-2 bg-[#4DC035]/10 border border-[#4DC035]/30 rounded-full text-[#4DC035] text-sm font-medium transition-all duration-300 hover:bg-[#4DC035] hover:text-black hover:border-transparent">
                 Contact
-              </button>
+              </a>
             </div>
           </div>
 
@@ -170,6 +170,8 @@ const PortfolioPage: React.FC = () => {
                       src={video.videoUrl}
                       width="100%"
                       height="100%"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerPolicy="strict-origin-when-cross-origin"
                       allowFullScreen
                       className="w-full h-full border-none"
                       title={video.title}
@@ -257,9 +259,9 @@ const PortfolioPage: React.FC = () => {
               <p className="text-white/60 text-lg mb-8 max-w-xl mx-auto">
                 Let's bring your vision to life. Book a free strategy call and see how we can grow your brand.
               </p>
-              <button className="px-10 py-4 bg-gradient-to-r from-[#4DC035] to-[#4DC035] rounded-full text-black font-bold text-base transition-all duration-300 hover:shadow-lg hover:shadow-[#4DC035]/30 hover:scale-105">
+              <a href="https://calendly.com/usman-prestigemediapk/30min" target="_blank" rel="noopener noreferrer" className="inline-block px-10 py-4 bg-gradient-to-r from-[#4DC035] to-[#4DC035] rounded-full text-black font-bold text-base transition-all duration-300 hover:shadow-lg hover:shadow-[#4DC035]/30 hover:scale-105">
                 Book free strategic call
-              </button>
+              </a>
             </div>
           </div>
         </div>

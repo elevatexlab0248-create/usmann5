@@ -10,6 +10,12 @@ export interface PortfolioVideo {
   videoUrl?: string;
 }
 
+// Convert YouTube Shorts URLs to embed format
+const getYouTubeEmbedUrl = (url: string) => {
+  const videoId = url.match(/shorts\/([^?]+)/)?.[1] || '';
+  return `https://www.youtube.com/embed/${videoId}?autoplay=0`;
+};
+
 export const portfolioVideos: PortfolioVideo[] = [
   {
     id: 5,
@@ -18,7 +24,7 @@ export const portfolioVideos: PortfolioVideo[] = [
     thumbnail: 'https://images.pexels.com/photos/3587620/pexels-photo-3587620.jpeg?auto=compress&cs=tinysrgb&w=800',
     duration: '0:45',
     client: 'Client 1',
-    videoUrl: 'https://drive.google.com/file/d/1Ef2L6G-8WD2c9Yd3OmUWQ6u8UsIdSg0p/preview',
+    videoUrl: getYouTubeEmbedUrl('https://youtube.com/shorts/lc032R3bmFA?si=wE6cBFQP-I26A7q3'),
   },
   {
     id: 6,
@@ -27,7 +33,7 @@ export const portfolioVideos: PortfolioVideo[] = [
     thumbnail: 'https://images.pexels.com/photos/3938022/pexels-photo-3938022.jpeg?auto=compress&cs=tinysrgb&w=800',
     duration: '0:50',
     client: 'Client 2',
-    videoUrl: 'https://drive.google.com/file/d/1AUjJeloJkeoNmLsSUF_U31XvqO886duh/preview',
+    videoUrl: getYouTubeEmbedUrl('https://youtube.com/shorts/10wOasCpl3o?si=ketIRoXJovrR61Ef'),
   },
   {
     id: 7,
@@ -36,7 +42,7 @@ export const portfolioVideos: PortfolioVideo[] = [
     thumbnail: 'https://images.pexels.com/photos/3588365/pexels-photo-3588365.jpeg?auto=compress&cs=tinysrgb&w=800',
     duration: '0:55',
     client: 'Client 3',
-    videoUrl: 'https://drive.google.com/file/d/1a3AOorp4UAHohlrXSPhJ6Q0NRNtBwcPt/preview',
+    videoUrl: getYouTubeEmbedUrl('https://youtube.com/shorts/khp1-AzMOCE?si=Lo0a8Vnube2WPLdy'),
   },
   {
     id: 8,
@@ -45,7 +51,7 @@ export const portfolioVideos: PortfolioVideo[] = [
     thumbnail: 'https://images.pexels.com/photos/3714901/pexels-photo-3714901.jpeg?auto=compress&cs=tinysrgb&w=800',
     duration: '0:45',
     client: 'Client 4',
-    videoUrl: 'https://drive.google.com/file/d/1uWaj1ne93JxU2TsTuwpguH7t9GEqqapm/preview',
+    videoUrl: getYouTubeEmbedUrl('https://youtube.com/shorts/wfD5TFs5ITA?si=CE52GAKTyNfGMGpi'),
   },
   {
     id: 9,
@@ -54,7 +60,7 @@ export const portfolioVideos: PortfolioVideo[] = [
     thumbnail: 'https://images.pexels.com/photos/3747465/pexels-photo-3747465.jpeg?auto=compress&cs=tinysrgb&w=800',
     duration: '0:50',
     client: 'Client 5',
-    videoUrl: 'https://drive.google.com/file/d/15T6LHJ8KT3jWCHYITY9K4o8GGzOKIUXZ/preview',
+    videoUrl: getYouTubeEmbedUrl('https://youtube.com/shorts/_QfTmVNOw0M?si=GhsB59fY8jbPusvO'),
   },
   {
     id: 10,
@@ -63,7 +69,7 @@ export const portfolioVideos: PortfolioVideo[] = [
     thumbnail: 'https://images.pexels.com/photos/3938013/pexels-photo-3938013.jpeg?auto=compress&cs=tinysrgb&w=800',
     duration: '0:48',
     client: 'Client 6',
-    videoUrl: 'https://drive.google.com/file/d/1dD29IMW10n3_rsmpORs841D96t5Bc6Ag/preview',
+    videoUrl: getYouTubeEmbedUrl('https://youtube.com/shorts/7nwD33Z6CXw?si=4ynMIMYtiO_P-sMa'),
   },
   {
     id: 11,
@@ -72,7 +78,7 @@ export const portfolioVideos: PortfolioVideo[] = [
     thumbnail: 'https://images.pexels.com/photos/3975517/pexels-photo-3975517.jpeg?auto=compress&cs=tinysrgb&w=800',
     duration: '0:52',
     client: 'Client 7',
-    videoUrl: 'https://drive.google.com/file/d/1_81mV4aVVssqaVB-8JuDNzcBH6AcKeyW/preview',
+    videoUrl: getYouTubeEmbedUrl('https://youtube.com/shorts/PVVZXcf1IIU?si=8Oiy-ZcC7iRaEdUK'),
   },
   {
     id: 12,
@@ -81,7 +87,7 @@ export const portfolioVideos: PortfolioVideo[] = [
     thumbnail: 'https://images.pexels.com/photos/3848382/pexels-photo-3848382.jpeg?auto=compress&cs=tinysrgb&w=800',
     duration: '0:46',
     client: 'Client 8',
-    videoUrl: 'https://drive.google.com/file/d/1szP2lDoJqvUv1z1WQ6Ua5YrVlnfnni03/preview',
+    videoUrl: getYouTubeEmbedUrl('https://youtube.com/shorts/M5PLDeWZXMo?si=WXp8HSnckkOCi0uf'),
   },
   {
     id: 13,
@@ -90,7 +96,7 @@ export const portfolioVideos: PortfolioVideo[] = [
     thumbnail: 'https://images.pexels.com/photos/3714896/pexels-photo-3714896.jpeg?auto=compress&cs=tinysrgb&w=800',
     duration: '0:49',
     client: 'Client 9',
-    videoUrl: 'https://drive.google.com/file/d/1xG1U3oipmGgV1_kExhRjIFR9dcZjT_jf/preview',
+    videoUrl: getYouTubeEmbedUrl('https://youtube.com/shorts/bPSzsKl5fto?si=JL9t_1uVxvheFwhv'),
   },
   {
     id: 14,
@@ -99,7 +105,7 @@ export const portfolioVideos: PortfolioVideo[] = [
     thumbnail: 'https://images.pexels.com/photos/3748221/pexels-photo-3748221.jpeg?auto=compress&cs=tinysrgb&w=800',
     duration: '0:51',
     client: 'Client 10',
-    videoUrl: 'https://drive.google.com/file/d/149Q-da-7mYwkW5ahJUq7QUHBehzykLYa/preview',
+    videoUrl: getYouTubeEmbedUrl('https://youtube.com/shorts/pDjwDIqOHC0?si=h6j5OCKgKAk7dNGS'),
   },
   {
     id: 15,
@@ -108,7 +114,7 @@ export const portfolioVideos: PortfolioVideo[] = [
     thumbnail: 'https://images.pexels.com/photos/3975518/pexels-photo-3975518.jpeg?auto=compress&cs=tinysrgb&w=800',
     duration: '0:47',
     client: 'Client 11',
-    videoUrl: 'https://drive.google.com/file/d/1D7g8s0b2amFK8Rhep12YarIyg5BSZJTh/preview',
+    videoUrl: getYouTubeEmbedUrl('https://youtube.com/shorts/mgjm6wO2T_0?si=kkTVZOU7ONWKZEve'),
   },
   {
     id: 16,
@@ -117,7 +123,7 @@ export const portfolioVideos: PortfolioVideo[] = [
     thumbnail: 'https://images.pexels.com/photos/3587621/pexels-photo-3587621.jpeg?auto=compress&cs=tinysrgb&w=800',
     duration: '0:53',
     client: 'Client 12',
-    videoUrl: 'https://drive.google.com/file/d/1pyjGf9lhvx2rr3bdUIKBr0zOhE4X6reZ/preview',
+    videoUrl: getYouTubeEmbedUrl('https://youtube.com/shorts/SxWrtsrCQ-Y?si=_toRWGXYAz8pYRYt'),
   },
   {
     id: 17,
@@ -126,7 +132,7 @@ export const portfolioVideos: PortfolioVideo[] = [
     thumbnail: 'https://images.pexels.com/photos/3938023/pexels-photo-3938023.jpeg?auto=compress&cs=tinysrgb&w=800',
     duration: '0:44',
     client: 'Client 13',
-    videoUrl: 'https://drive.google.com/file/d/1SmL9bQ8f8vVoKvQMDvkbYjREwJCijiud/preview',
+    videoUrl: getYouTubeEmbedUrl('https://youtube.com/shorts/-5K0-RkvdXY?si=bCV1YuzmaaLomFJK'),
   },
   {
     id: 18,
@@ -135,7 +141,7 @@ export const portfolioVideos: PortfolioVideo[] = [
     thumbnail: 'https://images.pexels.com/photos/3588366/pexels-photo-3588366.jpeg?auto=compress&cs=tinysrgb&w=800',
     duration: '0:50',
     client: 'Client 14',
-    videoUrl: 'https://drive.google.com/file/d/1dX2ewbCVGb94T6lXafCAKTqWBD602S6x/preview',
+    videoUrl: getYouTubeEmbedUrl('https://youtube.com/shorts/wcxKzp7Cokg?si=7fQRmK6jFQ8etsZ3'),
   },
   {
     id: 19,
@@ -144,7 +150,7 @@ export const portfolioVideos: PortfolioVideo[] = [
     thumbnail: 'https://images.pexels.com/photos/3714902/pexels-photo-3714902.jpeg?auto=compress&cs=tinysrgb&w=800',
     duration: '0:48',
     client: 'Client 15',
-    videoUrl: 'https://drive.google.com/file/d/1Xwu0TzhtdIocip3PCFgLzAuCQCtBjyfv/preview',
+    videoUrl: getYouTubeEmbedUrl('https://youtube.com/shorts/P9ckrTyDYL4?si=LBGs4qTiz49kaQp-'),
   },
   {
     id: 1,
@@ -153,7 +159,7 @@ export const portfolioVideos: PortfolioVideo[] = [
     thumbnail: 'https://images.pexels.com/photos/3588365/pexels-photo-3588365.jpeg?auto=compress&cs=tinysrgb&w=800',
     duration: '0:30',
     client: 'AI Ads',
-    videoUrl: 'https://drive.google.com/file/d/1UWJxm6V3CKGbVCCnVqyUmxy-Js87PAM1/preview',
+    videoUrl: getYouTubeEmbedUrl('https://youtube.com/shorts/ZD-VcyHBVog?si=vW8yYlo3zRRqHzS3'),
   },
   {
     id: 2,
@@ -162,7 +168,7 @@ export const portfolioVideos: PortfolioVideo[] = [
     thumbnail: 'https://images.pexels.com/photos/3938013/pexels-photo-3938013.jpeg?auto=compress&cs=tinysrgb&w=800',
     duration: '0:30',
     client: 'AI Ads',
-    videoUrl: 'https://drive.google.com/file/d/12CppPbBkxz24bje1ARQnrnhl7TMmRyBQ/preview',
+    videoUrl: getYouTubeEmbedUrl('https://youtube.com/shorts/imA0-uMW1uI?si=5l80A5a3s3EMtPDE'),
   },
   {
     id: 3,
@@ -171,7 +177,7 @@ export const portfolioVideos: PortfolioVideo[] = [
     thumbnail: 'https://images.pexels.com/photos/3714896/pexels-photo-3714896.jpeg?auto=compress&cs=tinysrgb&w=800',
     duration: '0:30',
     client: 'AI Ads',
-    videoUrl: 'https://drive.google.com/file/d/1u4eDzbvXcSFEEcIYcYnE4RvVn50G7enC/preview',
+    videoUrl: getYouTubeEmbedUrl('https://youtube.com/shorts/0S992c2S7k8?si=6NfxL8j6qH_3PP6j'),
   },
   {
     id: 4,
@@ -180,7 +186,7 @@ export const portfolioVideos: PortfolioVideo[] = [
     thumbnail: 'https://images.pexels.com/photos/3748221/pexels-photo-3748221.jpeg?auto=compress&cs=tinysrgb&w=800',
     duration: '0:30',
     client: 'AI Ads',
-    videoUrl: 'https://drive.google.com/file/d/1Bw8uVF1T6cmngQKpkmrx-yLtPRrkb8e0/preview',
+    videoUrl: getYouTubeEmbedUrl('https://youtube.com/shorts/hTCdEPzl2xs?si=UoI5VQ5Q7HPJSi6M'),
   },
 ];
 
