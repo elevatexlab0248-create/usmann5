@@ -8,11 +8,17 @@ interface Video {
   videoUrl: string;
 }
 
+// Convert YouTube Shorts URLs to embed format
+const getYouTubeEmbedUrl = (url: string) => {
+  const videoId = url.match(/shorts\/([^?]+)/)?.[1] || '';
+  return `https://www.youtube.com/embed/${videoId}?autoplay=0`;
+};
+
 const videos: Video[] = [
-  { id: 1, title: 'AI Ad 1', videoUrl: 'https://drive.google.com/file/d/1UWJxm6V3CKGbVCCnVqyUmxy-Js87PAM1/preview' },
-  { id: 2, title: 'AI Ad 2', videoUrl: 'https://drive.google.com/file/d/12CppPbBkxz24bje1ARQnrnhl7TMmRyBQ/preview' },
-  { id: 3, title: 'AI Ad 3', videoUrl: 'https://drive.google.com/file/d/1u4eDzbvXcSFEEcIYcYnE4RvVn50G7enC/preview' },
-  { id: 4, title: 'AI Ad 4', videoUrl: 'https://drive.google.com/file/d/1Bw8uVF1T6cmngQKpkmrx-yLtPRrkb8e0/preview' },
+  { id: 1, title: 'AI Ad 1', videoUrl: getYouTubeEmbedUrl('https://youtube.com/shorts/ZD-VcyHBVog?si=vW8yYlo3zRRqHzS3') },
+  { id: 2, title: 'AI Ad 2', videoUrl: getYouTubeEmbedUrl('https://youtube.com/shorts/imA0-uMW1uI?si=5l80A5a3s3EMtPDE') },
+  { id: 3, title: 'AI Ad 3', videoUrl: getYouTubeEmbedUrl('https://youtube.com/shorts/0S992c2S7k8?si=6NfxL8j6qH_3PP6j') },
+  { id: 4, title: 'AI Ad 4', videoUrl: getYouTubeEmbedUrl('https://youtube.com/shorts/hTCdEPzl2xs?si=UoI5VQ5Q7HPJSi6M') },
 ];
 
 const AIAdsSection: React.FC = () => {
@@ -50,6 +56,8 @@ const AIAdsSection: React.FC = () => {
                 src={videos[currentIndex]?.videoUrl}
                 width="100%"
                 height="100%"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
                 allowFullScreen
                 className="absolute inset-0 w-full h-full border-none"
                 title={videos[currentIndex]?.title || 'AI Ad'}
@@ -99,6 +107,8 @@ const AIAdsSection: React.FC = () => {
                     src={video.videoUrl}
                     width="100%"
                     height="100%"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
                     allowFullScreen
                     className="w-full h-full border-none"
                     title={video.title}

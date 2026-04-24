@@ -129,12 +129,15 @@ function App() {
           {/* Horizontal Video */}
           <div className="w-full max-w-3xl rounded-2xl overflow-hidden border border-white/10 shadow-[0_0_60px_rgba(77,192,53,0.08)] animate-fade-in">
             <div className="relative w-full aspect-video bg-black">
-              <video
-                src="https://drive.google.com/uc?export=download&id=14aHOV8nW8v28TOMwpKu_syWZHUapyC1J"
-                controls
-                className="absolute inset-0 w-full h-full"
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/SnTC8q6gy_Q?si=GlcnCdS6LqrYidc_&autoplay=0"
                 title="Featured Video"
-                preload="metadata"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+                className="absolute inset-0 w-full h-full border-none"
               />
             </div>
           </div>
